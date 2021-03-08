@@ -1,0 +1,16 @@
+.projectBlock {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageWrapper {
+    width: 200px;
+    height: 200px;
+    background-color: #eeeef5;
+}
+
+.description {
+    text-align: center;
+}

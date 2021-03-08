@@ -1,0 +1,10 @@
+.remoteBlock {
+    height: 50vh;
+    background-color: antiquewhite;
+}
+
+.remoteContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
