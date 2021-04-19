@@ -1,5 +1,4 @@
 .container {
-    border: 1px solid;
     height: 100%;
     width: 80%;
     margin: 0 auto;
@@ -7,4 +6,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media (max-width: 870px) {
+    .container {
+        justify-content: center;
+    }
 }

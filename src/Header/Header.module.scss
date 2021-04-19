@@ -1,0 +1,15 @@
+@import "../common/styles/variables";
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $dark;
+    @media (max-width: 870px) {
+        .header {
+            justify-content: center;
+        }
+    }
+}
+

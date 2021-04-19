@@ -1,0 +1,39 @@
+@import "../common/styles/variables";
+
+.footer {
+  min-height: 20vh;
+  padding-top: 50px;
+  background-color: $semi-dark;
+
+  .footerContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .social {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      padding: 0;
+      gap: 30px;
+
+      .imgWrapper {
+        width: 50px;
+        height: 50px;
+      }
+
+      @media (max-width: 460px) {
+        .social {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+@import "../styles/variables";
+
+.title {
+  margin: 0 0 30px;
+  position: relative;
+  h2 {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.2;
+    letter-spacing: 5px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $blue;
+    width: 55px;
+    height: 1px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  @media (max-width: 572px) {
+    h2 {
+      font-size: 26px;
+    }
+  }
+  @media (max-width: 476px) {
+    h2 {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 372px) {
+    h2 {
+      text-align: center;
+    }
+  }
+}

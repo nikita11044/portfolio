@@ -1,0 +1,16 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.formContainer textarea {
+    height: 55px;
+}
+
+@media (max-width: 390px) {
+    .formContainer {
+        width: 100%;
+    }
+}

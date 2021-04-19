@@ -1,17 +1,19 @@
 import React from 'react';
-import styles from './Contacts.module.css'
-import styleContainer from "../common/styles/Container.module.css";
+import './../App.scss';
+import styles from './Contacts.module.scss'
+import styleContainer from "../common/styles/Container.module.scss";
 import ContactsForm from "./ContactsForm/ContactsForm";
+import {Title} from "../common/components/Title";
 
 function Contacts() {
     return (
-        <div className={styles.contactsBlock}>
+        <section className={styles.contactsBlock}>
             <div className={`${styleContainer.container} ${styles.contactsContainer}`}>
-                <h2>Contacts</h2>
+                <Title titleText="Contacts"/>
                 <ContactsForm />
-                <button>Send</button>
+                <button className={`${styles.sendButton} custom-button`}>Send</button>
             </div>
-        </div>
+        </section>
     );
 }
 

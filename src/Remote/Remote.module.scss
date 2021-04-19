@@ -1,0 +1,38 @@
+.remoteBlock {
+  height: 20vh;
+  padding: 50px 0px;
+
+  .remoteContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h2 {
+      margin: 5px;
+      @media (max-height: 673px) {
+        & {
+          font-size: 20px;
+        }
+      }
+      @media (max-height: 673px) {
+        & {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .button {
+      position: relative;
+      @media (max-height: 673px) {
+        & {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

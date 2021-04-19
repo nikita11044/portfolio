@@ -1,21 +1,35 @@
 import React from 'react';
-import styleContainer from './../common/styles/Container.module.css'
-import styles from './Projects.module.css'
+import styleContainer from './../common/styles/Container.module.scss'
+import styles from './Projects.module.scss'
 import Project from "./Project/Project";
+import {Title} from "../common/components/Title";
+import socialNetworkImage from './../assets/image/social-network.jpg'
+import todolistImage from './../assets/image/todolist.jpg'
 
 function Projects() {
+    const social = {
+        backgroundImage: `url(${socialNetworkImage})`
+    }
+    const todolist = {
+        backgroundImage: `url(${todolistImage})`
+    }
+
     return (
-        <div className={styles.projectsBlock}>
+        <section className={styles.projectsBlock}>
             <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
-                <h2 className={styles.title}>My projects</h2>
+                <Title titleText="My Projects"/>
                 <div className={styles.projects}>
-                    <Project title={'ToDoList'}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam minima nostrum optio possimus quia repellat similique tempore unde vero. Architecto consectetur dolorem ipsum qui quidem. Consequatur ea eum quis similique?'}/>
-                    <Project title={'ToDoList'}
-                             description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam minima nostrum optio possimus quia repellat similique tempore unde vero. Architecto consectetur dolorem ipsum qui quidem. Consequatur ea eum quis similique?'}/>
+                    <Project
+                        style={todolist}
+                        title={'ToDoList'}
+                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam minima nostrum optio possimus quia repellat similique tempore unde vero. Architecto consectetur dolorem ipsum qui quidem. Consequatur ea eum quis similique?'}/>
+                    <Project
+                        style={social}
+                        title={'SocialNetwork'}
+                        description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam minima nostrum optio possimus quia repellat similique tempore unde vero. Architecto consectetur dolorem ipsum qui quidem. Consequatur ea eum quis similique?'}/>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
